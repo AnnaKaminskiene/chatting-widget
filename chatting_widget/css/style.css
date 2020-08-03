@@ -1,0 +1,558 @@
+html {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  overflow-x: hidden !important;
+  position: relative;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  background: #f3f0f9;
+  direction: ltr;
+  font-size: 13px;
+  font-family: 'Rubik', sans-serif;
+  color: #545660;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  font-weight: 400;
+}
+h4{
+  font-size: 15;
+}
+
+/*links*/
+
+a:hover,
+a:active,
+a:focus,
+button,
+button:active,
+button:focus,
+object,
+embed,
+input::-moz-focus-inner {
+  outline: 0;
+}
+
+a,
+a:focus {
+  color: #816fd1;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+label {
+  font-weight: normal;
+}
+
+*:focus {
+  outline: 0 !important;
+}
+
+/*btn*/
+
+.btn {
+  padding: 6px 12px;
+  font-size: 13px;
+  border: none !important;
+  border-radius: 4px !important;
+  color:#545660;
+  background-color: transparent;
+  touch-action: none !important;
+  opacity: 0.8;
+}
+
+/*button default*/
+
+.btn-default{
+  background-color: transparent;
+}
+.btn-default:hover,
+.btn-default:focus,
+.btn-default:active{
+  background-color: #faf8ff;
+}
+.btn:active,
+.btn-default:active,
+.btn-default.active,
+.btn-default:active:focus,
+.btn:focus,
+.btn-default.focus{
+  opacity: 0.8;
+  box-shadow: none;
+  border:none;
+  background-color: #f3f0f9;
+}
+.btn-default.active {
+  color: #fff;
+  background-color: #816fd1;
+  border: none;
+}
+
+.btn-default.active:hover {
+  border: none;
+  color: #fff;
+  background-color: #816fd1;
+  opacity: 0.8;
+}
+
+/*btn-primary*/
+.btn-primary {
+  color: #fff!important;
+  background-color: #816fd1!important;
+}
+
+.btn-success:hover,
+.btn-success.active,
+.btn-success.focus,
+.btn-success:focus,
+.btn-success.active.focus,
+.btn-success.active:focus,
+.btn-success:active:focus,
+.btn-success:active:hover,
+.btn-primary.active,
+.btn-primary:active,
+.btn-primary:hover,
+.btn-primary.focus,
+.btn-primary:focus,
+.btn-primary.active.focus,
+.btn-primary.active:focus,
+.btn-primary.active:hover,
+.btn-primary:active.focus,
+.btn-primary:active:focus,
+.btn-primary:active:hover {
+  opacity: 1;
+}
+
+/*btn-success*/
+
+.btn-success,
+.btn-success:hover,
+.btn-success:active,
+.btn-success:focus
+{
+  background-color:#38cb89;
+  color: #fff;
+}
+
+/*btn-group*/
+
+.btn-group,
+.btn-group .btn+.btn,
+.btn-group .btn+.btn-group,
+.btn-group .btn-group+.btn,
+.btn-group .btn-group+.btn-group{
+  margin-left: 0;
+  margin-right: 5px;
+}
+
+/*icons*/
+
+.material-icons {
+  text-rendering: auto;
+  font-size: 20px !important;
+  vertical-align: middle;
+}
+
+
+/*DIALOG FORM*/
+/*Background*/
+.chatbot-dialog-form{
+  background : -moz-linear-gradient(0.04% 49.97% 0deg,rgba(56, 203, 137, 1) 0.03%,rgba(184, 164, 243, 1) 100%);
+  background : -webkit-linear-gradient(0deg, rgba(56, 203, 137, 1) 0.03%, rgba(184, 164, 243, 1) 100%);
+  background : -webkit-gradient(linear,0.04% 49.97% ,99.95% 49.97% ,color-stop(0.0003,rgba(56, 203, 137, 1) ),color-stop(1,rgba(184, 164, 243, 1) ));
+  background : -o-linear-gradient(0deg, rgba(56, 203, 137, 1) 0.03%, rgba(184, 164, 243, 1) 100%);
+  background : -ms-linear-gradient(0deg, rgba(56, 203, 137, 1) 0.03%, rgba(184, 164, 243, 1) 100%);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#38CB89', endColorstr='#B8A4F3' ,GradientType=0)";
+  background : linear-gradient(90deg, rgba(56, 203, 137, 1) 0.03%, rgba(184, 164, 243, 1) 100%);
+  margin: 0;
+  display: inline-block;
+  width: 100%;
+  float: right;
+  -moz-box-shadow: 0 0 13px 1px rgba(62,44,90,.08);
+  -ms-box-shadow: 0 0 13px 1px rgba(62,44,90,.08);
+  -o-box-shadow: 0 0 13px 1px rgba(62,44,90,.08);
+  box-shadow: 0 0 13px 1px rgba(62,44,90,.08);
+
+}
+/*Text input field + button*/
+.chatbot-chat-input{
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  padding: 0;
+  width: 100%;
+}
+.chatbot-chat-input .chatbot-input-wrapper{
+  padding: 5px 10px 5px 10px;
+  background: #fff;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0px 0px 3px 0px rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: inset 0px 0px 3px 0px rgba(0, 0, 0, 0.35);
+  box-shadow: inset 0px 0px 3px 0px rgba(0, 0, 0, 0.35);
+  position: relative;
+  width: 80%;
+  display: inline-block;
+}
+.chatbot-chat-input input{
+  padding: 0;
+  border: 0;
+  margin: 0;
+  width: 100%;
+  height: 30px;
+  min-height: 30px;
+  line-height: 20px;
+  text-align: left;
+  font-size: 13px;
+  resize: none;
+}
+.btn-chatbot-send-wrapper{
+  display: inline-block;
+}
+.chatbot-dialog-form .btn-chatbot-send{
+  font-size: 28px;
+  padding: 5px;
+  position: relative;
+  display: inline-block;
+ margin: auto;
+  width: 40px;
+  height: 40px;
+  line-height: 0;
+  text-align: center;
+  margin-left: 3px;
+}
+/*Buttons in dialog form*/
+.btn-white{
+  background: none;
+  color: white;
+  opacity: 0.8;
+}
+.btn-white:hover,
+.btn-white:active,
+.btn-white:focus-within,
+.btn-white:focus
+{
+  background: none;
+  color: white!important;
+  opacity: 1;
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.2)!important;
+  border-radius: 4px;
+  border-color: none;
+}
+.btn-chatbot-dialog-form{
+  font-size: 14px;
+  padding: 10px;
+}
+
+.btn-chatbot-dialog-form i{
+  font-size: 18px!important;
+  margin-right: 5px;
+  vertical-align: sub;
+}
+
+.chatbot-dialog-form .btn-group{
+  margin-top: 16px;
+  margin-left:8px;
+  margin-right: auto;
+}
+/*Chatting area*/
+section#chatbot-dialog-area{
+  height: 757px;
+  display: block;
+  margin: 10px 15px;
+}
+
+/*Messages*/
+
+.chatbot-dialog-area .msg.sent .msg-wrp {
+  min-height: 50px;
+  overflow: hidden;
+  text-align: left;
+}
+.chatbot-dialog-area .msg.received .msg-wrp {
+  min-height: 50px;
+  overflow: hidden;
+  text-align: left;
+}
+
+.chatbot-dialog-areat .msg .msg-cont {
+  display: inline-block;
+  width: auto;
+  height: auto;
+}
+.chatbot-dialog-area .msg.received .msg-cont {
+  float: left;
+}
+.chatbot-dialog-area .msg.sent .msg-cont {
+  float: right;
+}
+
+/*Message bubbles*/
+
+.panel{
+  margin-bottom: 5px;
+}
+
+.chatbot-dialog-area .msg .panel {
+  -moz-border-radius:25px;
+  -webkit-border-radius:25px;
+  border-radius: 25px;
+  -moz-box-shadow:none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  padding: 15px;
+}
+/*Message text*/
+.chatbot-dialog-area .msg .panel p{
+  margin: unset;
+}
+/*Message bubble appearance differences*/
+.chatbot-dialog-area .msg.received .panel {
+  background: #816fd1;
+  border-top-left-radius: 0;
+  margin-left: 34px;
+}
+.chatbot-dialog-area .msg.received .panel p{
+  color: white;
+}
+.chatbot-dialog-area .msg.sent .panel {
+  background: white;
+  border-top-right-radius: 0;
+  margin-right: 34px;
+}
+.chatbot-dialog-area .msg.sent .panel p{
+  color: #816fd1;
+}
+/*Buttons in bot response*/
+.chatbot-response-button-wrp{
+  margin-left: 30px;
+}
+
+.chatbot-dialog-area .msg.received .msg-wrp .chatbot-response-button-wrp > .chatbot-response-button{
+  margin-left: 10px;
+}
+
+.chatbot-dialog-area .msg.received .panel.chatbot-response-button {
+  border-top-left-radius: 25px;
+  margin-top: 10px;
+  cursor: pointer;
+  background-color: #aa80c3;
+}
+.chatbot-dialog-area .msg.received .panel.chatbot-response-button p{
+  color: white;
+}
+
+/*Account icons*/
+.chatbot-dialog-area .msg .msg-wrp .account{
+  border-radius: 50%;
+  padding: 0px;
+  width: 35px;
+  height: 35px;
+  display: block;
+}
+
+.chatbot-dialog-area .msg.sent .msg-wrp .account{
+  border: 0.15em solid #fff;
+}
+
+.chatbot-dialog-area .msg.received .msg-wrp .account{
+  border: 0.15em solid #816fd1;
+}
+
+.chatbot-dialog-area .msg.received .msg-wrp .account{
+  border-bottom-right-radius: 0;
+}
+
+.chatbot-dialog-area .msg.sent .msg-wrp .account{
+  border-bottom-left-radius: 0;
+}
+
+.chatbot-dialog-area .msg .msg-wrp .account i{
+  padding: 5.5px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.chatbot-dialog-area .msg.sent .msg-wrp .account i{
+  color: white;
+}
+
+.chatbot-dialog-area .msg.received .msg-wrp .account i{
+  color: #816fd1;
+}
+
+.chatbot-dialog-area .msg.sent .msg-wrp .account{
+  margin-left: auto;
+}
+.chatbot-dialog-area .msg.received .msg-wrp .account{
+  margin-right: auto;
+}
+/*Labels with a name of the response*/
+.info-label{
+  font-size: 11px;
+  color:white;
+  display: block;
+}
+
+.msg.received .info-label{
+  margin-left: 50px;
+  text-align: left;
+}
+
+.msg.sent .info-label{
+  margin-right: 50px;
+  text-align: right;
+}
+
+/*Image in the response*/
+.chatbot-img-respose{
+  width: 100%;
+  border-radius: 4px;
+  margin-top: 5px;
+}
+
+/*Chatbot webchat widget*/
+.chatbot-webchat-widget{
+  display: block;
+  position: absolute;
+  width: 400px;
+  height: 600px;
+  bottom: 80px;
+  right: 80px;
+}
+/*The whole widget*/
+.chatbot-webchat-widget .chatbot-dialog-form{
+  width: inherit;
+  height: inherit;
+  -moz-box-shadow: 0px 2px 6px 4px rgba(62,44,90,.08);
+  -ms-box-shadow: 0px 2px 6px 4px rgba(62,44,90,.08);
+  -o-box-shadow: 0px 2px 6px 4px rgba(62,44,90,.08);
+  box-shadow: 0px 2px 6px 4px rgba(62,44,90,.08);
+
+}
+/*Chatbot name on the top*/
+.chatbot-name{
+   color: white;
+   position: absolute;
+   top: 3px;
+   left: 25px;
+ }
+/*Buttons on the top*/
+.chatbot-webchat-widget .btn-group{
+  position: absolute;
+  right: 10px;
+}
+/*To make footer and header the same size chatbot-webchat-widget minus .widget-body height divide 2 */
+.chatbot-webchat-widget .widget-header{
+  height: 50px;
+}
+.chatbot-webchat-widget .widget-body{
+  background-color: white;
+  height: 500px;
+  padding: 15px;
+}
+.chatbot-webchat-widget .chatbot-chat-input{
+  bottom: 60px;
+  width: 100%;
+}
+
+/*Different colors for widget*/
+
+/*Message bubbles*/
+.chatbot-webchat-widget .chatbot-dialog-area .msg.received .panel {
+  color:white;
+  background: #38cb89;
+}
+.chatbot-webchat-widget .chatbot-dialog-area .msg.sent .panel {
+  color: white;
+  background:#816fd1;
+}
+  /*Chatbot response bubbles*/
+.chatbot-webchat-widget .chatbot-dialog-area .msg.received .panel.chatbot-response-button {
+  border: 1px solid #38cb89;
+  background-color: white;
+}
+.chatbot-webchat-widget .chatbot-dialog-area .msg.received .panel.chatbot-response-button p{
+  color: #38cb89;
+}
+/*Text in repsonse bubbles*/
+.chatbot-webchat-widget .chatbot-dialog-area .msg.received .panel p,
+.chatbot-webchat-widget .chatbot-dialog-area .msg.sent .panel p{
+  color: white;
+}
+/*Avatars*/
+.chatbot-webchat-widget .chatbot-dialog-area .msg .msg-wrp .account{
+  width:32px;
+  height:32px;
+}
+.chatbot-webchat-widget .chatbot-dialog-area .msg.sent .msg-wrp .account{
+  background-color: #38cb89;
+  border: #38cb89;
+}
+.chatbot-webchat-widget .chatbot-dialog-area .msg.received .msg-wrp .account{
+  background-color: #816fd1;
+  border: #816fd1;
+}
+/*Labels with a name of the response*/
+.chatbot-webchat-widget .info-label{
+  color: #777982;
+}
+
+/*Paddings*/
+.no-padding {
+  padding: 0px !important;
+}
+
+/*
+ * Margins
+ */
+.no-margin {
+  margin: 0px !important;
+}
+
+/*
+ * No border
+ */
+.no-border,
+.well[class*=" bg-"].no-border {
+  border-width: 0px !important;
+}
+
+.no-border-transparent {
+  border-color: transparent !important;
+}
+
+.no-border-radius {
+  border-radius: 0px;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+}
+
+@media (min-width: 1200px){
+
+}
+
+@media (min-width: 992px){
+
+}
+
+@media (min-width: 768px){
+  .chatbot-dialog-form{
+    border-bottom-right-radius: 4px;
+  }
+}
